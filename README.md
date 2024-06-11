@@ -137,8 +137,7 @@ https://www.docker.com/resources/what-container/
 gcloud builds submit --config cloudbuild.yaml
 ```
 
-#### Classify Curl example 
-- Change local img directory
+#### Predict Curl example 
 - Change server_url 
 
 ```bash
