@@ -1,0 +1,10 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/obs-tfm/tryo_xgboost', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/obs-tfm/tryo_xgboost']
+
+images:
+- gcr.io/obs-tfm/tryo_xgboost
